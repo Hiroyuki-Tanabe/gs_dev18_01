@@ -1,0 +1,329 @@
+/* ここから下に記載していく */
+
+body{
+    text-align : center;
+  }
+
+  .header {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin:10px 30px;
+    /* border: solid; */
+    border-color: wheat;
+    border-width: 1px;
+  }
+
+  .header_left {
+    /* text-align: right; */
+    /* color:red; */
+    border:none;
+    margin-left: 100px;
+  }
+
+  .header_right {
+    margin-right: 100px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .header_child {
+    margin:15px;
+    text-decoration:none;
+    color: gray;
+  }
+
+  /* a {
+    color: blue;
+  } */
+
+
+ /* --- 親要素 ------------------------ */
+ .mainImage {
+    display    : inline-block;
+    position   : relative;
+    padding    : 0
+  }
+   /* --- 文字BOX(子要素) ------------------ */
+  .over {
+    position   : absolute;                   /* 親要素からの絶対位置 */
+    box-sizing : border-box;
+    white-space: nowrap;                     /* 折返しなし */
+    display    : block;                      /* ブロック要素にする */
+    width      : 100%;                       /* 親要素の幅に合わせる */
+    color      :#FFFFFF;    /* 文字色（透明度） */
+    /*background : rgba(255, 255, 255, 0.50);*/  /* 背景色（透明度） */
+    top        : 50%;                        /* 親要素からの上位置 */
+    left       : 0;                          /* 親要素からの左位置 */
+    text-align : center;                     /* 文字位置 */
+    transform  : translateY(-50%);           /* 文字BOXの位置ずらし */
+    padding    : 10px;                       /* BOX内の余白 */
+    font-size  : 30pt;                       /* 文字サイズ */
+    font-weight: bold;                       /* 太字 */
+    line-height: 150%;                       /* 1行の高さ */
+  }
+
+  .about {
+      color:#FFCC00;
+      font-weight:bold;
+      font-size  : 24pt;
+      margin: 60px 0px 30px
+  }
+
+  .aboutimg {
+      display: flex;
+      justify-content: center;
+  }
+
+  .aboutimg img {
+    max-width: 80%;
+    /* margin:30px; */
+}
+  .cheese_head {
+    font-size  : 18pt;
+    margin-bottom: 40px;
+    line-height: 150%;
+  }
+
+  .cheese_text {
+    font-size  : 16pt;
+    margin: 0px 0px 40px;
+    line-height: 150%;
+  }
+
+  .course {
+    color:#000000;
+    font-weight:bold;
+    font-size  : 24pt;
+    margin:60px 0px 30px;
+    width: auto;
+    height: auto;
+  }
+
+  .course_text {
+    font-size: 16pt;
+  }
+
+  
+  .course_contents{
+    display: flex;
+    margin: 30px;
+  }
+
+  .box-image {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+  }
+  .box-item {
+    flex: 1;
+    width: 50%;
+    padding: 50px;
+  }
+
+
+  .head {
+      margin: 120px 50px 40px 0px;
+      font-size:20px;
+      font-weight: bold;
+  }
+  .text {
+      font-size: 16px;
+      padding: 0px 50px 120px 50px;
+      line-height: 200%;
+      background-color: antiquewhite;
+      width: 50%;
+      flex: 1;
+  }
+
+
+ .coursetext {
+    margin-bottom: 60px;
+ }
+ .news {
+      margin: 60px 50px 60px 50px;
+ }
+ .news_contents {
+    margin: 0px 30px 30px 30px;
+}
+
+/* Access */
+.access {
+    background-color: whitesmoke;
+    margin:30px 100px;
+    padding:10px 80px;
+}
+.access_head {
+    padding:40px 0px 50px 0px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.table {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 200%;
+    padding: 40px;
+    border-collapse: separate;
+    border-spacing: 80px 0px;
+    color: grey;
+}
+
+/* Contact */
+.contact_head {
+    font-size:24px;
+    font-weight:bold;
+    margin-top:60px;
+}
+.contact_sub {
+    font-size:18px;
+    margin-top:30px;
+}
+.contact_text {
+    margin-top:30px;
+    font-size:16px;
+    line-height: 150%;
+}
+
+.ask {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 200%;
+    padding: 0px;
+    border-collapse: separate;
+    /* border-spacing: 80px 0px; */
+    margin: auto;
+    /* border: solid 1px black; */
+}
+/* table#ask_table, */
+/* table#ask_table tr, */
+/* table#ask_table th, */
+table#ask_table {
+    /* border-bottom: solid 3px gray; */
+    border-bottom: solid 1px gray;
+    border-top: solid 2px gray;
+    margin: 40px;
+}
+
+table#ask_table th,
+table#ask_table td {
+  /* border-bottom: solid 3px gray; */
+  border-top: solid 1px gray;
+  /* border-right: solid 3px gray; */
+  height: 30px;
+  vertical-align: middle;
+  padding: 8px 40px;
+  width: ;
+  /* margin: 30px; */
+}
+
+table#ask_table th {
+  border-right: solid 1px gray;
+  
+  padding-right: 20px;
+}
+
+.input {
+  width: 250px;
+}
+
+.input1 {
+  height:25px;
+}
+
+.input2 {
+  height: 120px;
+}
+
+/* 元々のチェックボックス（非表示） */
+.mycheckbox input[type="checkbox"]{
+  display: none;
+}
+/* チェックボックスの代わりを成すラベル */
+.mycheckbox input[type="checkbox"]+label{
+  display: none;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  /* margin-top: 30p  x; */
+  padding-left: 40px;
+  padding-right: 10px;
+  line-height: 270%;
+  /* padding-top: 50px; */
+}
+/* ラベルの左に表示させる正方形のボックス□ */
+.mycheckbox input[type="checkbox"]+label::before{
+  content: "";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+  margin-top: -10px;
+  left: 0;
+  top: 55%;
+  /* border: 1px solid; */
+  /* border-color:  #585753; 枠の色変更 お好きな色を */
+  background-color: whitesmoke; /* 背景の色変更 お好きな色を */
+}
+/* チェックが入った時のレ点 */
+.mycheckbox input[type="checkbox"]:checked+label::after{
+  content: "";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 18px;
+  height: 9px;
+  margin-top: -9px;
+  top: 50%;
+  left: 3px;
+  transform: rotate(-45deg);
+  border-bottom: 3px solid;
+  border-left: 3px solid;
+  border-color: gray; /* チェックの色変更 お好きな色を */
+}
+.riyuu {
+  /* margin-top: 150px; */
+}
+
+/* label, input[type='checkbox'] {
+  cursor: pointer;
+}  */
+
+.button {
+  color:white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: orange;
+  width: 300px;
+  height: 60px;
+}
+
+.button1 {
+  display: inline-block;
+  line-height: 60px;
+}
+
+.button2 {
+  border: none;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+.footer {
+  background-color: #707070;
+  color: white;
+  margin-top: 30px;
+  height: 80px;
+  line-height: 80px;
+}
+
+.test {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: row;
+  align-items: center;
+}
